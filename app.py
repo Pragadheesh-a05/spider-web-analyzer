@@ -9,7 +9,7 @@ st.set_page_config(page_title="Spider Web Analyzer", layout="wide", initial_side
 @st.cache_data
 def load_background():
     try:
-        with open(r"C:\spider\background.png", "rb") as f:
+        with open("background.png", "rb") as f:
             return base64.b64encode(f.read()).decode()
     except:
         return None
@@ -295,4 +295,5 @@ Particle contours are isolated using adaptive thresholding and analyzed via Open
 ## Who Is It For
 
 Built for chemical engineers, environmental researchers, and material scientists — this tool bridges image analysis with practical particle distribution insights, supporting work in filtration studies, air quality monitoring, and materials characterization.
+
 """)
